@@ -1,0 +1,106 @@
+Last login: Thu Oct 24 17:32:53 on console
+w87-169-112:~ coding$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	go
+w87-169-112:~ coding$ cd Documents/
+w87-169-112:Documents coding$ ls
+GitHub
+w87-169-112:Documents coding$ cd GitHub/
+w87-169-112:GitHub coding$ ls
+2019-Hybrid-CDR-Email-UVic-Rocketry	HTML-Practice
+App Practice				HTML-Resume
+Battlesnake				hello-world.
+E-Portfolio
+w87-169-112:GitHub coding$ git clone https://github.com/VikeLabs/lecshure-main.git
+Cloning into 'lecshure-main'...
+remote: Enumerating objects: 39, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 39 (delta 8), reused 29 (delta 4), pack-reused 0
+Unpacking objects: 100% (39/39), done.
+w87-169-112:GitHub coding$ ls
+2019-Hybrid-CDR-Email-UVic-Rocketry	HTML-Practice
+App Practice				HTML-Resume
+Battlesnake				hello-world.
+E-Portfolio				lecshure-main
+w87-169-112:GitHub coding$ open .
+w87-169-112:GitHub coding$ git clone https://github.com/VikeLabs/git-learning.git
+Cloning into 'git-learning'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+w87-169-112:GitHub coding$ cd git-learning/
+w87-169-112:git-learning coding$ git branch
+* master
+w87-169-112:git-learning coding$ git branch bryce_edwards
+w87-169-112:git-learning coding$ git branch
+  bryce_edwards
+* master
+w87-169-112:git-learning coding$ git checkout bryce_edwards
+Switched to branch 'bryce_edwards'
+w87-169-112:git-learning coding$ git branch
+* bryce_edwards
+  master
+w87-169-112:git-learning coding$ git push --set-upstream origin bryce_edwards
+Username for 'https://github.com': mjvandas
+Password for 'https://mjvandas@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/VikeLabs/git-learning.git/'
+w87-169-112:git-learning coding$ git push --set-upstream origin bryce_edwards
+Username for 'https://github.com': mjvandas
+Password for 'https://mjvandas@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'bryce_edwards' on GitHub by visiting:
+remote:      https://github.com/VikeLabs/git-learning/pull/new/bryce_edwards
+remote: 
+To https://github.com/VikeLabs/git-learning.git
+ * [new branch]      bryce_edwards -> bryce_edwards
+Branch 'bryce_edwards' set up to track remote branch 'bryce_edwards' from 'origin'.
+w87-169-112:git-learning coding$ git branch
+* bryce_edwards
+  master
+w87-169-112:git-learning coding$ git branch
+* bryce_edwards
+  master
+w87-169-112:git-learning coding$ git fetch--all
+git: 'fetch--all' is not a git command. See 'git --help'.
+w87-169-112:git-learning coding$ git fetch-all
+git: 'fetch-all' is not a git command. See 'git --help'.
+
+The most similar command is
+	fetch-pack
+w87-169-112:git-learning coding$ git fetch --all
+Fetching origin
+From https://github.com/VikeLabs/git-learning
+ * [new branch]      jaeBranch  -> origin/jaeBranch
+ * [new branch]      michelle   -> origin/michelle
+ * [new branch]      plonkie    -> origin/plonkie
+ * [new branch]      sushi      -> origin/sushi
+ * [new branch]      virus      -> origin/virus
+ * [new branch]      zac        -> origin/zac
+w87-169-112:git-learning coding$ git branch
+* bryce_edwards
+  master
+w87-169-112:git-learning coding$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+w87-169-112:git-learning coding$ git branch
+  bryce_edwards
+* master
+w87-169-112:git-learning coding$ git checkout bryce_edwards
+Switched to branch 'bryce_edwards'
+Your branch is up to date with 'origin/bryce_edwards'.
+w87-169-112:git-learning coding$ git branch
+* bryce_edwards
+  master
+w87-169-112:git-learning coding$ git add .
+w87-169-112:git-learning coding$ git status
+On branch bryce_edwards
+Your branch is up to date with 'origin/bryce_edwards'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   rating
